@@ -1,5 +1,8 @@
 /* https://learn.microsoft.com/en-us/azure/static-web-apps/configuration#select-the-api-language-runtime-version */
 {
+
+   broken purposefully to test if causes error
+
    "_metadata": {
       "_docs": "https://learn.microsoft.com/en-us/azure/static-web-apps/configuration#select-the-api-language-runtime-version"
    },
