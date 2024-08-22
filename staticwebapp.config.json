@@ -1,0 +1,43 @@
+/* https://learn.microsoft.com/en-us/azure/static-web-apps/configuration#select-the-api-language-runtime-version */
+{
+   "_metadata": {
+      "_docs": "https://learn.microsoft.com/en-us/azure/static-web-apps/configuration#select-the-api-language-runtime-version"
+   },
+
+   "routes": [
+      // {
+         // "route": "/api/{NextNum}",
+         // "methods": [
+            // "GET"
+         // ]
+      // },
+      {
+         "route": "/api/*",
+         "allowedRoles": [
+            "anonymous"
+         ],
+         "methods": [
+            "GET",
+            "POST",
+            "PUT",
+            "DELETE"
+         ]
+      }
+   ],
+
+   "responseOverrides": {
+      "404": {
+         "rewrite": "/404.html"
+      }
+   },
+
+   "mimeTypes": {
+      ".js": "application/javascript",
+      ".css": "text/css",
+      ".html": "text/html"
+   },
+   
+   "platform": {
+      "apiRuntime": "dotnet:6.0"
+   }
+}
